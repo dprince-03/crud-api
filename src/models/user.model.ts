@@ -16,7 +16,19 @@ const UserSchema = new Schema<IUser>({
 	},
 	gender: {
 		type: String,
+		required: [true, "Please provide gender"],
+		trim: true,
 	},
+	email: {
+		type: String,
+		required: [true, "Please provide email"],
+		trim: true,
+	},
+	age: {
+		type: Number,
+		required: [true, "Please provide gender"],
+		trim: true,
+	}
 
 	// remaining fields here
 });
